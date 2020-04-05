@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" type="text/css" href="css/css.css">
+</head>
+
+<body>
+    <div class="container">
+        <header class="header">
+            <h1 id="title" class="text-center">
+                B-band rock survey
+            </h1>
+            <p id="description" class="description text-center">
+                Thank you for your attention to help us start a new project.
+            </p>
+        </header>
+        <form id="survey-form">
+            <div class="form-group">
+                <label id="name-label" for="name">Name</label>
+                <input type="text" id="name" name="Name" class="form-control" required placeholder="Enter your name">
+            </div>
+            <div class="form-group">
+                <label id="email-label">Email</label>
+                <input type="email" id="email" name="Email" class="form-control" required placeholder="Enter your email">
+            </div>
+            <div class="form-group">
+                <label id="number-label"> Age (between 1 and 100):</label>
+                <input type="number" id="number" name="Age" class="form-control" required min="1" max="100" placeholder="Age">
+            </div>
+            <div class="form-group">
+                <label id="dropdown">Which option best describes your interest in music:</label>
+                <select id="dropdown" name="cars" class="form-control" required>
+            <option disabled selected value>Select a current role</option>
+            <option value="not">I do not have interest in music</option>
+            <option value="occasionaly">I occasionaly play or sing</option>
+            <option value="interested">I am really interested in music</option>
+            <option value="lover">I love music</option>
+            </select>
+            </div>
+            <div class="form-group">
+                <p>Where did you hear about us?</p>
+                <label>
+                <input type="radio" id="radiobutton" name="source" value="Friend" class="input-radio" checked>Friend
+            </label>
+                <label>
+                <input type="radio" id="female" name="source" value="Advert" class="input-radio">Advert
+            </label>
+                <label>
+                <input type="radio" id="other" name="source" value="Other" class="input-radio">Other
+            </label>
+            </div>
+            <div class="form-group">
+                <p>
+                    In what do you want to improve?
+                    <span class="clue">(Check all that apply)</span>
+                </p>
+                <label>
+            <input type="checkbox" id="improvement" name="guitar" value="guitar" class="input-checkbox">Guitar</label>
+                <label>
+            <input type="checkbox" id="improvement" name="drums" value="drums" class="input-checkbox">Drums</label>
+                <label>
+            <input type="checkbox" id="improvement" name="piano" value="piano" class="input-checkbox">Piano</label>
+                <label>
+            <input type="checkbox" id="improvement" name="clarinet" value="clarinet" class="input-checkbox">Clarinet</label>
+                <label>
+            <input type="checkbox" id="improvement" name="flute" value="flute" class="input-checkbox">Flute</label>
+                <label>
+            <input type="checkbox" id="improvement" name="sing" value="sing" class="input-checkbox">Sing</label>
+                <label>
+            <input type="checkbox" id="improvement" name="whatever" value="whatever" class="input-checkbox">In all</label>
+            </div>
+            <div class="form-group">
+                <p>Any suggestions or comments?</p>
+                <textarea id="comments" class="input-textarea" name="comment" placeholder="Enter your comment here..."></textarea>
+            </div>
+            <div class="form-group">
+                <button type="submit" id="submit" class="submit-button">
+                Submit
+            </button>
+            </div>
+        </form>
+    </div>
+    <script type=" text/javascript " src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js "></script>
+
+</body>
+
+</html>
